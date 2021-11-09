@@ -10,18 +10,24 @@ with open(path.join(here, 'requirements.txt')) as f:
     requirements = f.read()
 
 setup(
-    name='acoomans_python_project_template',
-    version=0.2,
+    name='q3rcon',
+    version=0.1,
     author='Arnaud Coomans',
-    author_email='arnaud.coomans@gmail.com',
-    description='A description for my python project',
+    author_email='hello@acoomans.com',
+    description='Quake 3 remote console',
     long_description=long_description,
-    url='https://github.com/acoomans/python_project_template',
+    url='https://github.com/acoomans/q3rcon',
     license='BSD',
     platforms='any',
     keywords=[],
     install_requires=requirements,
-    scripts=['scripts/myscript.py'],
+    entry_points={
+        'console_scripts': [
+            'q3rcon = q3rcon.q3rcon_cli:main',
+            'q3rcon-cli = q3rcon.q3rcon_cli:main',
+            'q3rcon-web = q3rcon.q3rcon_web:main',
+        ],
+    },
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     include_package_data=True,
     test_suite='tests.test_project',
