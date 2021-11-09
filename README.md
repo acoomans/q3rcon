@@ -1,8 +1,8 @@
 q3rcon
 =================
 
-[![Pypi version](http://img.shields.io/pypi/v/acoomans_python_project_template.svg)](https://pypi.python.org/pypi/acoomans_python_project_template)
-[![Pypi license](http://img.shields.io/pypi/l/acoomans_python_project_template.svg)](https://pypi.python.org/pypi/acoomans_python_project_template)
+[![Pypi version](http://img.shields.io/pypi/v/q3rcon.svg)](https://pypi.python.org/pypi/q3rcon)
+[![Pypi license](http://img.shields.io/pypi/l/q3rcon.svg)](https://pypi.python.org/pypi/q3rcon)
 ![Python 3](http://img.shields.io/badge/python-3-blue.svg)
 
 ## Install
